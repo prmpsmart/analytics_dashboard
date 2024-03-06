@@ -10,4 +10,7 @@ credits to [Lindsay](https://www.figma.com/@lho)
 
 ## Images
 
-- ![Cover](analytics_dashboard-cover.png)
+- Cover![Cover](./assets/analytics_dashboard-cover.png)
+- Main![Main](./assets/analytics_dashboard-main.png)
+- Timeframe Filter ![Timeframe Filter](./assets/analytics_dashboard-timeframe-filter.png)
+- Group Filter![Group Filter](./assets/analytics_dashboard-group-filter.png)
