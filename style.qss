@@ -1,0 +1,150 @@
+QWidget {
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+AnalyticsDashoard {
+    background-color: #F5F5F5;
+}
+
+SidePanel {
+    min-width: 246px;
+    max-width: 246px;
+    background-color: #FFFFFF;
+    padding-top: 43px;
+    padding-left: 38px;
+    padding-right: 38px;
+}
+
+SidePanel QLabel#tesla_label {
+    min-width: 140px;
+    max-width: 140px;
+    min-height: 17px;
+    max-height: 17px;
+    padding-left: 20px;
+}
+
+SidePanel QLabel#tesla_label:hover {
+    background-color: #F5F5F5;
+}
+
+SidePanelButton {
+    min-width: 193px;
+    max-width: 193px;
+    min-height: 46px;
+    max-height: 46px;
+    color: #FFFFFF;
+}
+
+SidePanelButton QLabel {
+    background-color: transparent;
+    color: #1B59F8;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+SidePanelButton QLabel#icon {
+    min-width: 24px;
+    max-width: 24px;
+    min-height: 24px;
+    max-height: 24px;
+}
+
+SidePanelButton QLabel#selected {
+    color: #1B59F8;
+}
+
+SidePanelButton QLabel#non_selected {
+    color: #4c4c4c;
+}
+
+SidePanelButton:pressed {
+    background-color: rgba(27, 90, 248, 0.4);
+    color: #1B59F8;
+}
+
+SidePanelButton:checked {
+    background-color: rgba(27, 90, 248, 0.1);
+    color: #1B59F8;
+}
+
+SidePanel QLabel#supported {
+    color: #4c4c4c;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+
+Body {
+    background-color: #F5F5F5;
+    color: #000000;
+    border-radius: 30px;
+    padding-top: 10;
+    padding-left: 34;
+    padding-right: 54;
+}
+
+Body QLabel#reports {
+    background-color: transparent;
+    color: #000000;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+Body QLabel#download_pixmap,
+Body QLabel#download {
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+Body HLine {
+    background-color: #4c4c4c98;
+    max-height: 1px;
+}
+
+BodyContentFrame,
+BodyContentFrame QFrame#frame {
+    background-color: transparent;
+    background-color: pink;
+}
+
+DropdownButton {
+    min-height: 49px;
+    border-radius: 20px;
+}
+
+DropdownButton:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+DropdownButton:pressed {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+DropdownButton QLabel {
+    font-size: 16px;
+    background-color: transparent;
+}
+
+DropdownButton QLabel#label {
+    max-width: 78px;
+    font-size: 16px;
+}
+
+DropdownButton QLabel#text {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+DropdownDialog {
+    background-color: white;
+    border-radius: 15px;
+
+}
+
+DropdownDialog QWidget#widget {
+    background-color: white;
+    border-radius: 15px;
+
+}
