@@ -11,13 +11,12 @@ class BodyContentFrame(ScrollableFrame):
         top_lay = QHBoxLayout()
         main_lay.addLayout(top_lay)
 
-        time_frame_dialog = TimeFrameDialog([])
+        time_frame_dialog = TimeFrameDialog()
         time_frame_dropdown = DropdownButton(
             "Timeframe:",
             "All-time",
             dialog=time_frame_dialog,
         )
-        time_frame_dialog.dropdown_button = time_frame_dropdown
         top_lay.addWidget(time_frame_dropdown)
 
         people_dropdown = DropdownButton("People:", "All")

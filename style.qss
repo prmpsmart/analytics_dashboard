@@ -111,7 +111,7 @@ BodyContentFrame QFrame#frame {
 
 DropdownButton {
     min-height: 49px;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 DropdownButton:hover {
@@ -127,18 +127,19 @@ DropdownButton QLabel {
     background-color: transparent;
 }
 
+TimeFrameDialog QLabel#label,
 DropdownButton QLabel#label {
     max-width: 78px;
     font-size: 16px;
 }
 
+TimeFrameDialog QLabel#text,
 DropdownButton QLabel#text {
     font-size: 16px;
     font-weight: 700;
 }
 
 DropdownDialog {
-    background-color: white;
     border-radius: 15px;
 
 }
@@ -147,4 +148,18 @@ DropdownDialog QWidget#widget {
     background-color: white;
     border-radius: 15px;
 
+}
+
+DropdownDialog HLine {
+    background-color: #4c4c4c98;
+    max-height: 1px;
+}
+
+DropdownDialog QPushButton {
+    background-color: #c7d3fc;
+}
+
+DropdownDialog QPushButton:hover,
+DropdownDialog QPushButton:selected {
+    background-color: #c7d3fc;
 }

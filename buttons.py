@@ -79,8 +79,11 @@ class DropdownButton(QPushButton):
         )
 
         if self.dialog:
-            self.dialog.move(self.mapToGlobal(self.pos()))
             self.dialog.setVisible(toggled)
 
     def on_submit(self, text: str):
         self._text.setText(text)
+
+    def showEvent(self, event: QShowEvent) -> None:
+        if self.dialog:
+            self.dialog.dropdown_button = self

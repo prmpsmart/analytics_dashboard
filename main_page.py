@@ -19,6 +19,13 @@ class AnalyticsDashoard(QFrame):
         self.body = Body()
         main_lay.addWidget(self.body)
 
+    # def mouseMoveEvent(self, event: QMouseEvent) -> None:
+    #     print(QCursor.pos())
+
+    # def event(self, event: QEvent) -> None:
+    #     print(QCursor.pos())
+    #     return super().event(event)
+
     def mousePressEvent(self, event: QMouseEvent) -> None:
         return QApplication.instance().quit()
 
