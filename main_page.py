@@ -30,7 +30,6 @@ class AnalyticsDashoard(QFrame):
         return QApplication.instance().quit()
 
     def showEvent(self, event: QShowEvent) -> None:
-
         return super().showEvent(event)
 
 

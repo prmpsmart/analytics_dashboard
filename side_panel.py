@@ -64,7 +64,6 @@ class SidePanel(QFrame):
         )
         main_lay.addWidget(settings_button)
 
-
         main_lay.addStretch()
 
 

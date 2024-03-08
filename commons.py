@@ -1,7 +1,14 @@
 from enum import Enum
-from PySide6.QtCore import *
-from PySide6.QtGui import *
-from PySide6.QtWidgets import *
+
+try:
+    # if PySide6 if what you have installed
+    from PySide6.QtCore import *
+    from PySide6.QtGui import *
+    from PySide6.QtWidgets import *
+except:  # if PyQt6 is what you have installed
+    from PyQt6.QtCore import *  # type: ignore
+    from PyQt6.QtGui import *  # type: ignore
+    from PyQt6.QtWidgets import *  # type: ignore
 
 DESIGN_WIDTH = 1440
 DESIGN_HEIGHT = 1162

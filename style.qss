@@ -128,12 +128,14 @@ DropdownButton QLabel {
 }
 
 TimeFrameDialog QLabel#label,
+PeopleFrameDialog QLabel#label,
 DropdownButton QLabel#label {
     max-width: 78px;
     font-size: 16px;
 }
 
 TimeFrameDialog QLabel#text,
+PeopleFrameDialog QLabel#text,
 DropdownButton QLabel#text {
     font-size: 16px;
     font-weight: 700;
@@ -141,7 +143,6 @@ DropdownButton QLabel#text {
 
 DropdownDialog {
     border-radius: 15px;
-
 }
 
 DropdownDialog QWidget#widget {
@@ -155,11 +156,92 @@ DropdownDialog HLine {
     max-height: 1px;
 }
 
-DropdownDialog QPushButton {
-    background-color: #c7d3fc;
+TimeFrameDialog QPushButton {
+    min-height: 38px;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 15px;
 }
 
-DropdownDialog QPushButton:hover,
-DropdownDialog QPushButton:selected {
-    background-color: #c7d3fc;
+TimeFrameDialog QPushButton:hover,
+TimeFrameDialog QPushButton:checked {
+    background-color: #F2F7FF;
+    font-weight: 700;
+}
+
+PeopleFrameDialog QPushButton#clear {
+    padding: 5px;
+}
+
+PeopleFrameDialog QPushButton#clear:hover,
+PeopleFrameDialog QPushButton#clear:pressed {
+    background-color: #F0F0F0;
+}
+
+PeopleFrameDialog ItemButton {
+    padding: 2px;
+    background-color: #F0F0F0;
+    min-height: 30px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+PeopleFrameDialog QLineEdit {
+    padding: 5px;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #000000;
+    font-size: 16px;
+}
+
+PeopleFrameDialog QGroupBox {
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+PeopleFrameDialog QGroupBox:title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 3px;
+    color: #9098A3;
+    font-size: 14px;
+}
+
+PeopleFrameDialog QRadioButton {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+PeopleFrameDialog QRadioButton::indicator {
+    width: 20px;
+    height: 20px;
+}
+
+PeopleFrameDialog QRadioButton::indicator::unchecked {
+    image: url(./svgs/radio_button_unchecked.svg);
+}
+
+PeopleFrameDialog QRadioButton::indicator::checked {
+    image: url(./svgs/radio_button_checked.svg);
+}
+
+SmallCard {
+    min-height: 152.4px;
+    max-height: 152.4px;
+}
+
+SmallCard QLabel#title {
+    font-size: 14px;
+}
+
+SmallCard QLabel#value {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+ActivityCard {
+    min-width: 556px;
+    max-width: 556px;
+    min-height: 322px;
+    max-height: 322px;
 }

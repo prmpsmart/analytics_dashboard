@@ -1,8 +1,7 @@
-from dialogs import *
+from commons import *
 
 
 class SidePanelButton(QPushButton):
-
     def __init__(self, svg: str, text: str, toggled: bool = False):
         super().__init__()
 
@@ -36,11 +35,17 @@ class SidePanelButton(QPushButton):
 
 
 class DropdownButton(QPushButton):
-    def __init__(self, label: str, text: str, dialog: DropdownDialog = None):
+    def __init__(
+        self,
+        label: str,
+        text: str,
+        dialog_class: type["DropdownDialog"] = None, # type: ignore
+    ):
         super().__init__()
 
-        self.dialog = dialog
+        self.dialog = dialog_class() if dialog_class else None
         if self.dialog:
+            self.dialog.dropdown_button = self
             self.dialog.submit.connect(self.on_submit)
 
         lay = QHBoxLayout(self)
@@ -87,3 +92,13 @@ class DropdownButton(QPushButton):
     def showEvent(self, event: QShowEvent) -> None:
         if self.dialog:
             self.dialog.dropdown_button = self
+
+
+class ItemButton(QPushButton):
+    def __init__(self, text: str):
+        super().__init__(text)
+
+        icon = QIcon("./svgs/close.svg")
+        self.setIcon(icon)
+        self.setIconSize(QSize(24, 24))
+        self.setLayoutDirection(Qt.LayoutDirection.RightToLeft)
