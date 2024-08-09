@@ -12,6 +12,7 @@ class AnalyticsDashoard(QFrame):
         # setup widgets
 
         main_lay = QHBoxLayout(self)
+        main_lay.setContentsMargins(0, 0, 0, 0)
 
         self.side_panel = SidePanel()
         main_lay.addWidget(self.side_panel)

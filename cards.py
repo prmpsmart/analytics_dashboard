@@ -5,11 +5,7 @@ class Card(QFrame):
     def __init__(self):
         super().__init__()
 
-        effect = QGraphicsDropShadowEffect()
-        effect.setBlurRadius(10)
-        effect.setOffset(2)
-        self.setGraphicsEffect(effect)
-
+        addShadow(self)
 
 class SmallCard(Card):
     def __init__(

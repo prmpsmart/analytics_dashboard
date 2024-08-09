@@ -12,8 +12,8 @@ SidePanel {
     max-width: 246px;
     background-color: #FFFFFF;
     padding-top: 43px;
-    padding-left: 38px;
-    padding-right: 38px;
+    padding-left: 20px;
+    /* padding-right: 38px; */
 }
 
 SidePanel QLabel#tesla_label {
@@ -71,7 +71,7 @@ SidePanelButton:checked {
 SidePanel QLabel#supported {
     color: #4c4c4c;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: bold;
     padding-left: 20px;
 }
 
@@ -79,9 +79,9 @@ Body {
     background-color: #F5F5F5;
     color: #000000;
     border-radius: 30px;
-    padding-top: 10;
-    padding-left: 34;
-    padding-right: 54;
+    margin-top: 10px;
+    margin-left: 34px;
+    margin-right: 54px;
 }
 
 Body QLabel#reports {
@@ -106,7 +106,7 @@ Body HLine {
 BodyContentFrame,
 BodyContentFrame QFrame#frame {
     background-color: transparent;
-    background-color: pink;
+    /* background-color: pink; */
 }
 
 DropdownButton {

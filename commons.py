@@ -13,9 +13,10 @@ except:  # if PyQt6 is what you have installed
 DESIGN_WIDTH = 1440
 DESIGN_HEIGHT = 1162
 
-CODING_WIDTH = 1440
+CODING_WIDTH = 1540
 CODING_HEIGHT = 900
 
+STYLE_QSS = ""
 STYLE_QSS = open("style.qss").read()
 
 
@@ -65,3 +66,12 @@ def QSvgIcon(
 
     pixmap = QSvgPixmap(pixmap=icon, color=color, composition=composition)
     return QIcon(pixmap)
+
+
+def addShadow(self):
+
+    self.___effect = QGraphicsDropShadowEffect()
+    # self.___effect.setBlurRadius(2)
+    self.___effect.setOffset(4)
+    self.___effect.setColor(QColor(0, 0, 0, 30))
+    self.setGraphicsEffect(self.___effect)

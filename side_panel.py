@@ -1,7 +1,8 @@
 from buttons import *
+from cards import *
 
 
-class SidePanel(QFrame):
+class SidePanel(Card):
     def __init__(self):
         super().__init__()
 

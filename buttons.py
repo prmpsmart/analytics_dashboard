@@ -39,9 +39,10 @@ class DropdownButton(QPushButton):
         self,
         label: str,
         text: str,
-        dialog_class: type["DropdownDialog"] = None, # type: ignore
+        dialog_class: type["DropdownDialog"] = None,  # type: ignore
     ):
         super().__init__()
+        addShadow(self)
 
         self.dialog = dialog_class() if dialog_class else None
         if self.dialog:

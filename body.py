@@ -74,7 +74,6 @@ class BodyContentFrame(ScrollableFrame):
 
         row, col = 0, 0
         for index, small_card_detail in enumerate(small_card_details):
-
             if index and not index % 3:
                 row += 1
                 col = 0
@@ -92,7 +91,7 @@ class BodyContentFrame(ScrollableFrame):
         content_lay.addWidget(activity_card, 0, 1)
 
         main_lay.addStretch()
-        self.setMinimumHeight(900)
+        # self.setMinimumHeight(900)
 
 
 class Body(QFrame):
@@ -132,7 +131,7 @@ class Body(QFrame):
         main_lay.addSpacing(28)
 
         body_content_frame = BodyContentFrame()
-        main_lay.addWidget(body_content_frame)
+        main_lay.addWidget(body_content_frame, 1)
 
         main_lay.addStretch()
 
